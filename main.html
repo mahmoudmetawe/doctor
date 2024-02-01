@@ -108,24 +108,28 @@
 
             
             <div class="cont1 cont text-end">
-                <div class="mb-4 mt-3 left">
-                    <label for="formGroupExampleInput" class="form-label">سعر الكشف و وقت الانتظار</label>
-                </div>
-                <div class="mb-3 left">
-                    <label for="formGroupExampleInput" class="form-label">سعر الكشف</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ادخل السعر المفترض للكشف">
-                </div>
-                <div class="mb-3 left">
-                    <label for="formGroupExampleInput2" class="form-label">سعر الاعادة</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ادخل السعر المفترض للاعادة">
-                </div>
-                <div class="mb-3 left">
-                    <label for="formGroupExampleInput2" class="form-label">مدة الانتظار</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="حدد مدة الانتظار بين الكشوفات">
-                </div>
-                <div class="btnsave">
-                    <button type="submit" class="btn btn-primary">الحفظ و المتابعة</button>
-                </div>
+                <form action="">
+                    <div class="mb-4 mt-3 left">
+                        <label for="formGroupExampleInput" class="form-label">سعر الكشف و وقت الانتظار</label>
+                    </div>
+                    <div class="mb-3 left">
+                        <label for="formGroupExampleInput" class="form-label">سعر الكشف</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ادخل السعر المفترض للكشف">
+                    </div>
+                    <div class="mb-3 left">
+                        <label for="formGroupExampleInput2" class="form-label">سعر الاعادة</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="ادخل السعر المفترض للاعادة">
+                    </div>
+                    <div class="mb-3 left">
+                        <label for="formGroupExampleInput2" class="form-label">مدة الانتظار</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="حدد مدة الانتظار بين الكشوفات">
+                    </div>
+                    <div class="btnsave">
+                        <button type="submit" class="btn btn-primary">الحفظ و المتابعة</button>
+                    </div>
+                </form>
             </div>
 
 
@@ -133,7 +137,71 @@
 
 
 
-            <div class="cont2 cont">2</div>
+            <div class="cont2 cont text-end" id="rightcont">
+                <fieldset class="righttitle">
+                    <label>اعداد ساعات العمل</label>
+                </fieldset>
+                <form class="day">
+                    <label for="time">الاثنين</label>
+                    <input type="time" pattern="" value="09:00" id="time">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="17:00">
+                    <input type="checkbox">
+                    <label for="">مفتوح</label><br>
+                    <label for="place">العدد الاقصى للكشوفات في الفترة الاولى</label><br>
+                    <input type="text" placeholder="   برجاء ادخال الحد الادنى للحجز" id="place">
+                    <input type="button" value="+اضافة فترة">
+                </form>
+            
+                <form class="day">
+                    <label for="time" >الثلاثاء</label>
+                    <input type="time" pattern="" value="09:00" id="time">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="17:00">
+                    <input type="checkbox" required>
+                    <label for="">مفتوح</label><br>
+                    <label for="place">العدد الاقصى للكشوفات في الفترة الاولى</label><br>
+                    <input type="text" placeholder="   برجاء ادخال الحد الادنى للحجز" id="place">
+                    <input type="button" value="+اضافة فترة">
+                </form>
+            
+                <form class="day">
+                    <label for="time">الاربعاء</label>
+                    <input type="time" pattern="" value="09:00" id="time">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="17:00">
+                    <input type="checkbox" required>
+                    <label for="">مفتوح</label><br>
+                </form>
+            
+                <form class="day">
+                    <label for="time">الخميس</label>
+                    <input type="time" pattern="" value="09:00" id="time">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="17:00">
+                    <input type="checkbox" required>
+                    <label for="">مفتوح</label><br>
+                </form>
+            
+                <form class="d6">
+                    <label for="time">الجمعه</label>
+                    <input type="time" pattern="" value="09:00" id="time">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="17:00">
+                    <input type="checkbox" required>
+                    <label for="">مفتوح</label><br>
+                    <label for="place">العدد الاقصى للكشوفات في الفترة الاولى</label><br>
+                    <input type="text" placeholder="  برجاء ادخال الحد الادنى للحجز" id="place">
+                    <input type="button" value="+اضافة فترة">
+                    <label for="time2">الفترة الثانية</label>
+                    <input type="time" pattern="" value="19:00" id="time2">
+                    <span>الى</span>
+                    <input type="time" pattern="" value="23:00">
+                    <label for="place">العدد الاقصى للكشوفات في الفترة الثانية</label><br>
+                    <input type="text" placeholder="   برجاء ادخال الحد الادنى للحجز" id="place">
+                    <input type="button" value="+اضافة فترة">
+                </form>
+            </div>
 
 
 
@@ -141,7 +209,9 @@
         </div>
     </div>
     <!-------start footer------------------------------------------------------------------>
-    <footer class="footer one"> foot </footer>
+    <footer class="footer one">
+        <i class="fa-solid fa-copyright fa-bounce"></i>
+    </footer>
 
 
 

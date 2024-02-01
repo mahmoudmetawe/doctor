@@ -35,14 +35,13 @@ body {
 }
 .title {
   grid-area: ti;
-  background-color: green;
   height: 45px;
   display: grid;
   grid-template-areas: btn btn btn tit tit tit;
 }
 .content {
   grid-area: cont;
-  height: 150vh;
+  height: 200vh;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -50,7 +49,7 @@ body {
 }
 footer {
   grid-area: foot;
-  background-color: blueviolet;
+  background-color: rgb(255, 255, 255);
 }
 .one {
   width: 97%;
@@ -153,16 +152,20 @@ footer {
 }
 
 .cont1 {
-  height: 55%;
+  height: 45%;
 }
 .cont2 {
-  height: 80%;
+  height: 78%;
+  direction: rtl;
+  font-size: small;
+  font-weight: 500;
 }
 .cont {
   width: 45%;
   border: 1px solid var(--border-color);
   direction: rtl;
 }
+/*-----------------------left content --------------------------------------------------------------------*/
 .left {
   width: 90%;
   margin-right: 20px;
@@ -180,5 +183,50 @@ footer {
   margin-right: 64%;
   margin-top: 11%;
 }
+/*----------------------------right content--------------------------------------------------------*/
+.cont2 .righttitle{
+  border-bottom: 1px solid var(--border-color);
+  font-size: small;
+  font-weight: 500;
+  padding: 15px;
+}
+.cont2 .day{
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px;
+}
+.cont2 .d6{
+  padding: 20px;
+}
 
-/* start footer ----------------------------------------------------------------------------------*/
+.cont2 input[type=time]{
+  background-color: white;
+  border: 1px solid black;
+  margin: 0 10px 0 10px;
+}
+.cont2 input[type=button]{
+  width: 30%;
+  height: 40px;
+  background-color: white;
+  color: rgb(87, 128, 218);
+  border: 1px solid rgb(87, 128, 218) ;
+}
+.cont2 input[type=text]{
+  width: 64%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+.cont2 label[for=time]{
+  margin-left: 20px;
+  font-size: small;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.cont2 input[type=checkbox]{
+  margin-right: 50px;
+}
+.cont2 #time2{
+  margin: 20px 10px 20px 10px;
+
+}
