@@ -1,0 +1,223 @@
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Noto+Naskh+Arabic&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+    <title>lap-project</title>
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/coding.js"></script>
+
+
+
+    <!----------- start navbar ----------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  one">
+        <div class="container-fluid  row">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  col-9 ps-4">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="direction: rtl;">
+                            Admin-users
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">user one </a></li>
+                            <li><a class="dropdown-item" href="#">user two</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">sign out </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active hov" aria-current="page" href="#"><img src="pic/doc.jpg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hov" href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hov" href="#"><i class="fa-regular fa-circle-question"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hov" href="#"><img src="pic/log.png"></a>
+                    </li>
+                </ul>
+                <form class="d-flex col-3 " role="search">
+                    <input class="form-control" type="search" placeholder="بحث..." aria-label="Search" style="direction: rtl;">
+                    <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-----start sidebar ------------------------------------------------------------------>
+    <div class="sidebar">
+        <div class="list-group">
+            <a href="#" class=" topside"></a>
+            <a href="portofolio.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-house log"></i>الرئيسية</a>
+            <a href="#" class="list-group-item list-group-item-action"><i
+                    class="fa-solid fa-user-doctor log"></i>الاطباء</a>
+            <a href="main.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-city log"></i>الفروع</a>
+            <a href="#" class="list-group-item list-group-item-action"><i
+                    class="fa-solid fa-hospital-user log"></i>المرضى</a>
+            <a href="#" class="list-group-item list-group-item-action"><i
+                    class="fa-solid fa-clipboard log"></i>الحجوزات</a>
+            <a href="#" class="list-group-item list-group-item-action"><i
+                    class="fa-solid fa-file-invoice log"></i>الخدمات</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-regular fa-clock log"></i>مواعيد
+                العمل</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-store log"></i>المنتجات</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-gears log"></i>الاعدادات
+                العامة</a>
+
+        </div>
+    </div>
+    <!-----start title -------------------------------------------------------------------->
+    <div class="title one bg-body-tertiary">
+        <div class="btn"></div>
+        <p class="tit">مركز كلينك للاسنان</p>
+
+    </div>
+    <!------start content------------------------------------------------------------------>
+    <div class="content one bg-body-tertiary">
+        <div class="container-porto row d-flex gap-5 bg-body-tertiary" style="width: 93%;">
+    
+            <div class="col-8  " style="background-color: white; height: 180vh;">
+                <div class="nav-cont mt-2">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                type="button" role="tab" aria-controls="pills-home" aria-selected="true">التفاصيل العامة</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">الأطباء</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">الخدمات</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                                type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">المنتجات</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                            tabindex="0">
+                        <div class=" gap-3 text-end gen-1">
+                        <div style="width: 30%;">
+                            <label for="">التخصص</label><br>
+                            <h6>تخصص في جراحة الاسنان و عمليات التجميل جامعة حورس</h5>
+                        </div>
+                        <div style="width: 20%;">
+                            <label for="">رقم الهاتف</label><br>
+                            <h6>0100000123</h5>
+                        </div>
+                        <div style="width: 20%;">
+                            <label for="">رقم هاتف اخر</label><br>
+                            <h6>0110000123</h5>
+                        </div>
+                        <div style="width: 20%;">
+                            <label for="">سعر الكشف</label><br>
+                            <h6>250 EGP</h5>
+                        </div>
+                        <div style="width: 30%;">
+                            <label for="">العنوان بالتفصيل</label><br>
+                            <h6>.......................</h5>
+                        </div>
+                        <div style="width: 20%;">
+                            <label for="">اسم سؤول الفرع</label><br>
+                            <h6>........................</h5>
+                        </div>
+                        <div style="width: 20%;">                          
+                            <label for="">رقم هاتف المسؤول</label><br>
+                            <h6>.........................</h5>
+                        </div>
+                        </div>
+
+
+                        <div class="" style="height: 20%; width: 100%; background-color: rgb(61, 109, 122);"></div>
+
+                        <div class="" style="height: 20%; width: 100%; background-color: rgb(0, 60, 128);"></div>
+
+                        <div class="" style="height: 20%; width: 100%; background-color: rgb(87, 128, 0);"></div>
+
+                        <div class="" style="height: 20%; width: 100%; background-color: rgb(128, 0, 90);"></div>
+                        </div>
+
+                    
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                            tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="col-3 " style="background-color: white; height: 85vh;">
+                <div class="container" style="border-bottom: 1px solid black;">
+                    <img src="pic/porto1.jpg" alt="" height="150px" width="150px" style="border-radius: 50%; margin-top: 10px;">
+                    <h2 style="font-size: large; font-weight: 600;">مركز كلينك للاسنان</h2>
+                    <h4 style="font-size: x-small; font-weight: 500;">فرع المحلة الكبرى (الموناليزا)</h4>
+                    <button type="button" class="btn btn-outline-primary mt-3 mb-3" style="font-size: small; width: 70%; ">
+                        تعديل بيانات الفرع
+                    </button>
+                </div>
+                <div class="under-cont">
+                    <button type="button" class="btn btn-outline-secondary mt-3 mb-3">
+                        : عدد الاطباء<i class="fa-solid fa-users iii"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary mb-3">
+                        : عدد الحجوزات<i class="fa-regular fa-calendar-days iii"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary mb-3">
+                        : عدد الخدمات المقدمة<i class="fa-solid fa-stethoscope iii"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------start footer------------------------------------------------------------------>
+    <footer class="footer one ">
+        <i class="fa-solid fa-copyright fa-bounce"></i>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
