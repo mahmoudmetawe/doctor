@@ -5,6 +5,7 @@
   --border-color: rgb(216, 216, 216);
   --font-color: rgb(165, 165, 165);
 }
+@media screen and (min-width: 600px) and (max-width: 1600px) {
   body {
     display: grid;
     column-gap: 7px;
@@ -221,7 +222,7 @@
     margin-bottom: 20px;
   }
   .cont2 input[type=checkbox]{
-    margin-right: 50px;
+    margin-right: 10% ;
   }
   .cont2 #time2{
     margin: 20px 10px 20px 10px;
@@ -230,7 +231,7 @@
     margin-bottom: 5px;
   }
 
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+}
 
 .container-porto {
   display: flex;
@@ -258,6 +259,7 @@
   color: var(--border-color);
   font-size: small;
 }
+
 .gen-1{
   height: 15%;
   width: 100%;
