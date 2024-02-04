@@ -278,8 +278,11 @@
   font-size: 75%;
   padding-top: 5px;
 }
-.gen-2{
+.center-1{
   display: flex;
+  justify-content: center;
 }
-
-
+card{
+  display: flex;
+  justify-content: center;
+}
